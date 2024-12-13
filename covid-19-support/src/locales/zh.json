@@ -36,6 +36,7 @@
     "partners": "信息来源",
     "title": "关于本网站"
   },
+  "call": "称呼",
   "category": {
     "childcare": "儿童照顾",
     "family": "家庭备餐",
@@ -59,6 +60,7 @@
     "wednesday": "星期三"
   },
   "getdirections": "",
+  "getdiections_short": "",
   "label": {
     "address": "地址",
     "allweek": "整个星期",
@@ -126,6 +128,10 @@
     "when-do-you-need-it": "您什么时候需要它？"
   },
   "title": "{0} COVID支持",
+
   "thankyou": "谢谢您",
-  "updates": "查找COVID-19相关日用杂货、免费餐点、药房、宠物用品及更多方面的更新讯息。"
+  "updates": "查找COVID-19相关日用杂货、免费餐点、药房、宠物用品及更多方面的更新讯息。",
+
+  "website": "网站"
+
 }

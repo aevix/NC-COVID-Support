@@ -3,7 +3,7 @@
     <app-header :language="language.name" @language-selected="changeLanguage" :socialMedia="socialMediaico">
       <theme-header></theme-header>
     </app-header>
-    <mobile-search-filters :need="need" @need-selected="needSelected" />
+    <mobile-search-filters :need="need" :warning="warningMobile" @need-selected="needSelected" />
     <!-- <mobile-map-list-toggle
       :is-filter-open="isFilterOpen"
       :is-resource-selected="locationData.currentBusiness != null && showList !== true"
@@ -19,6 +19,7 @@
         :highlightFilteredMarkers="highlightFilteredMarkers"
         :location="locationData"
         :show-list="showList"
+        :warning="warning"
         @location-selected="locationSelected"
         @toggle="isFilterOpen = !isFilterOpen"
         @need-selected="needSelected"
@@ -41,6 +42,7 @@
           :location="locationData"
           :attribution="attribution"
           @location-selected="locationSelected"
+          @location-unselected="locationUnselected"
           @bounds="boundsUpdated"
           @center="centerUpdated"
           :mapUrl="mapUrl"
@@ -132,7 +134,9 @@ export default {
       darkMode: darkModeMediaQuery.matches,
       mapUrl: '',
       attribution: null,
-      socialMediaico: theme.socialMedia
+      socialMediaico: theme.socialMedia,
+      warning: theme.warning,
+      warningMobile: theme.warning
     }
   },
   mounted() {
@@ -188,6 +192,7 @@ export default {
       this.need = val
       this.showList = this.need !== 'none'
       this.highlightFilters = []
+      this.warningMobile = null
       window.gtag('event', 'What do you need?', { event_category: 'Search - (' + this.language.name + ')', event_label: val })
     },
     changeLanguage(item) {
@@ -227,6 +232,11 @@ export default {
         event_category: 'View details - (' + this.language.name + ')',
         event_label: this.filteredMarkers[val.locValue].marker.gsx$providername.$t + proName
       })
+    },
+    locationUnselected(isSetByMap) {
+      this.locationData = { locValue: null, locId: null, currentBusiness: null, isSetByMap: isSetByMap }
+      this.isFilterOpen = false
+      this.showList = true
     }
   },
   computed: {

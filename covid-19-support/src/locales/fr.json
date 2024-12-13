@@ -36,6 +36,7 @@
     "partners": "Sources d'informations",
     "title": "A propos de ce site"
   },
+  "call": "Appeler",
   "category": {
     "childcare": "Garde d'enfants",
     "family": "Plat préparé en famille | Plats préparés en famille",
@@ -59,6 +60,7 @@
     "wednesday": "Mercredi"
   },
   "getdirections": "",
+  "getdiections_short": "",
   "label": {
     "address": "Adresse",
     "allweek": "Toute la semaine",
@@ -125,7 +127,9 @@
     "what-do-you-need": "De quoi avez-vous besoin?",
     "when-do-you-need-it": "Quand en avez-vous besoin?"
   },
+
   "title": "Soutien {0} COVID",
   "thankyou": "Merci !",
   "updates": "Trouvez les actualisations COVID -19 pour les courses, les repas gratuits, les pharmacies, les fornitures pour animaux et plus encore."
+
 }

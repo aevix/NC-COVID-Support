@@ -36,6 +36,7 @@
     "partners": "مصادر المعلومات",
     "title": "عن هذا الموقع"
   },
+  "call": "مكالمة",
   "category": {
     "childcare": "رعاية الطفل",
     "family": "وجبات عائلية معدة",
@@ -59,6 +60,7 @@
     "wednesday": "الأربعاء"
   },
   "getdirections": "",
+  "getdirections_short": "",
   "label": {
     "address": "عنوان",
     "allweek": "كل الاسبوع",
@@ -126,5 +128,6 @@
     "what-do-you-need": "ماذا تحتاج؟",
     "when-do-you-need-it": "متى تحتاجها؟"
   },
-  "title": "{0} دعم COVID"
+  "title": "{0} دعم COVID",
+  "website": "موقع الكتروني"
 }

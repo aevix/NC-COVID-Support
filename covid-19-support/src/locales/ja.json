@@ -36,6 +36,7 @@
     "partners": "情報源",
     "title": "このサイトについて"
   },
+  "call": "コール",
   "category": {
     "childcare": "育児",
     "family": "家族向け調理済みの食事・複数の家族向け調理済みの食事",
@@ -59,6 +60,7 @@
     "wednesday": "水曜日"
   },
   "getdirections": "",
+  "getdiections_short": "",
   "label": {
     "address": "住所",
     "allweek": "１週間毎日",
@@ -127,5 +129,6 @@
   },
   "title": "{0} COVIDのサポート",
   "thankyou": "ありがとうございます！",
-  "updates": "食料品店、無料の食事、医薬品、ペット用品などのCOVID-19に関する最新情報をご覧ください。"
+  "updates": "食料品店、無料の食事、医薬品、ペット用品などのCOVID-19に関する最新情報をご覧ください。",
+  "website": "ウェブサイト"
 }

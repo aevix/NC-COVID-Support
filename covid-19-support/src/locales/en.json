@@ -36,6 +36,7 @@
     "partners": "Info Sources",
     "title": "About this site"
   },
+  "call": "Call",
   "category": {
     "childcare": "Child care",
     "family": "Prepared family meals",
@@ -59,6 +60,7 @@
     "wednesday": "Wednesday"
   },
   "getdirections": "Get directions",
+  "getdirections_short": "Directions",
   "label": {
     "address": "Address",
     "allweek": "All week",
@@ -125,5 +127,6 @@
     "what-do-you-need": "What do you need?",
     "when-do-you-need-it": "When do you need it?"
   },
-  "title": "{0} COVID Support"
+  "title": "{0} COVID Support",
+  "website": "Website"
 }
